@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta name='description' content='PROTON.Inc - The Place where people talk in a simple way.'>
+    <meta name='theme-color' content='#0078d4'>
+    <meta name='msapplication-TileColor' content='#0078d4'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='style.css'>
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/tippy.js@6/animations/scale-extreme.css' />
+    <link rel='stylesheet' href='./style.css' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <title>PROTON - Login</title>
+</head>
+
+<body>
+    <div class='login-box'>
+        <div class='center main' data-aos='flip-up'>
+            <div style='display: flex; flex-direction: row; align-items: center'>
+                <div class='logo'>
+                    <h2>Login</h2>
+                </div>
+                <h2 style='font-size: 20px; font-weight: 400; color: rgb(134, 134, 134); letter-spacing: .5px'>
+                    &nbsp;Proton
+                    <i class='fas fa-atom icon'></i>
+                </h2>
+            </div>
+
+            <div class='login-form'>
+                <input type='text' class='in' id="username" placeholder='Email or Username...'>
+                <input type='password' class='in' id='password' placeholder='Password...'>
+                <div class="info" style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 9px; display: flex; align-items: center; color: rgb(172, 172, 172); margin-left: 15px;">
+                        <!--span class="i"><span style="transform: translateY(1px);">i</span></span-->Don't have an Account ? <a href="#" style="margin-left: 5px; text-decoration: none">Register</a>
+                    </span>
+                    <a href="#" class='showhide' onclick="showhide()">Show Password</a>
+                </div>
+                <button class='button-login'>
+                    Connect
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+    <script src='https://cdn.socket.io/socket.io-3.0.1.min.js'></script>
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+    <script src='https://unpkg.com/@popperjs/core@2'></script>
+    <script src='https://unpkg.com/tippy.js@6'></script>
+    <script>
+        AOS.init()
+    </script>
+  </body>
